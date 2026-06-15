@@ -20,6 +20,10 @@ CLIP performs well on broad image-text alignment tasks, but can struggle when pr
 <img width="1034" height="398" alt="image" src="https://github.com/user-attachments/assets/901c6ff0-da3f-4d99-ba6e-46846a117111" />
 
 
+**Attention steering code** 
+
+See `ConformationCLIP_ViT.py` for core attention steering implemenation.
+
 ## Technical Report 
 See `report/Enhancing CLIP for Fine-Grained Classification and VQA with VLM-Guided Attention Steering` for the full writeup.
 
