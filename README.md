@@ -1,2 +1,3 @@
-# vlm-guided-clip-attention-steering
-VLM-guided inference-time attention steering for CLIP ViT-B/16 using Grounding DINO region masks for fine-grained classification and visual question answering.
+This repository contains code and experiments for a VLM-guided inference-time attention steering pipeline for CLIP's Vision Transformer. The method uses vision-language model guidance (Qwen2.5-VL-7B) to generate task-relevant visual attributes, grounds those attributes into image regions with Grounding DINO, converts the regions into CLIP patch-level targets, and reweights selected attention heads (discovered through a seperate profiling phase) during inference.
+
+Overview: CLIP performs well on broad image-text alignment tasks, but can struggle with fine-grained visual discrimination and visual question answering when the answer depends on localized evidence. This project investigates whether external VLM guidance can steer CLIP's visual attention toward task-relevant image regions without additional fine-tuning.
