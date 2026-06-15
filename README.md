@@ -5,17 +5,17 @@ CLIP performs well on broad image-text alignment tasks, but can struggle when pr
 2. Ground attributes into image regions using Grounding DINO.
 3. Convert grounded boxes into CLIP ViT-B/16 patch targets.
 4. Profile attention heads on a held-out subset.
-5. Reweight selected attention heads during inference using PASTA-style steering.
+5. Reweight selected attention heads during inference using [PASTA-style](https://arxiv.org/abs/2311.02262) steering adapted to the visual domain.
 
 
 ## Approach
 
-**For classification:**
+**Offline Pre-processing pipeline for classification:**
 
 <img width="1047" height="450" alt="image" src="https://github.com/user-attachments/assets/f46cb598-8087-4597-b2b9-f80803ec0ae8" />
 
 
-**For VQA:**
+**Offline Pre-processing pipeline for VQA:**
 
 <img width="1034" height="398" alt="image" src="https://github.com/user-attachments/assets/901c6ff0-da3f-4d99-ba6e-46846a117111" />
 
