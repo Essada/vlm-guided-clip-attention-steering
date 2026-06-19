@@ -25,7 +25,7 @@ OpenAI's CLIP performs well on broad image-text alignment tasks, but can struggl
 
 See `ConformationCLIP_ViT.py` for core attention steering implemenation.
 
-## Report
+## Paper
 See `Enhancing CLIP for Fine-Grained Classification and VQA with VLM-Guided Attention Steering` for the full writeup.
 
 ## Setup to Recreate Experiments on Subsets of VQAv2 and CUB-200-2011
