@@ -1,6 +1,7 @@
 ## Overview
-CLIP performs well on broad image-text alignment tasks, but can struggle when predictions depend on localized visual evidence, such as fine-grained attributes or question-specific image regions. This repository contains code and reproducible experiments for a VLM-guided inference-time attention steering pipeline for CLIP's Vision Transformer. The method uses vision-language model guidance (Qwen2.5-VL-7B) to generate task-relevant visual attributes, grounds those attributes into image regions with Grounding DINO, converts the regions into CLIP patch-level targets, and reweights selected attention heads (discovered through a seperate profiling phase) at inference time.
+OpenAI's CLIP performs well on broad image-text alignment tasks, but can struggle when predictions depend on localized visual evidence, such as fine-grained attributes or question-specific image regions. This repository contains code and reproducible experiments for a VLM-guided inference-time attention steering pipeline for CLIP's Vision Transformer. The method uses vision-language model guidance (Qwen2.5-VL-7B) to generate task-relevant visual attributes, grounds those attributes into image regions with Grounding DINO, converts the regions into CLIP patch-level targets, and reweights selected attention heads (discovered through a seperate profiling phase) at inference time.
 
+**Pipeline**
 1. Generate class- or question-relevant visual attributes using a VLM with in-context learning examples.
 2. Ground attributes into image regions using Grounding DINO.
 3. Convert grounded boxes into CLIP ViT-B/16 patch targets.
