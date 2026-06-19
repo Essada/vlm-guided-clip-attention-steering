@@ -28,7 +28,7 @@ See `ConformationCLIP_ViT.py` for core attention steering implemenation.
 ## Technical Report 
 See `report/Enhancing CLIP for Fine-Grained Classification and VQA with VLM-Guided Attention Steering` for the full writeup.
 
-## Setup
+## Setup to Recreate Experiments on Subsets of VQAv2 and CUB-200-2011
 
 Install dependencies:
 
